@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>M093140010 Voronoi diagram說明網站</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== NAVBAR PART START ======-->
+
+    <section class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <h4 color="white">演算法 Term Project</h4>
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarEight" aria-controls="navbarEight" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarEight">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#about">軟體說明</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#format">軟體規格書</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#programming">程式設計</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#experiment">軟體測試與實驗結果</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#conclusion">結論與心得</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#appendix">附錄</a>
+                                    </li>
+
+                                    
+                                </ul>
+                            </div>
+
+                            
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navbar area -->
+        
+        <div id="home" class="slider-area">
+            <div class="bd-example">
+                <div id="carouselOne" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselOne" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselOne" data-slide-to="1"></li>
+                        <li data-target="#carouselOne" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item bg_cover active" style="background-image: url(assets/images/nsysu3.jpg)">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6 col-lg-7 col-sm-10">
+                                            <h2 class="carousel-title">演算法設計與分析</h2>
+                                        </div>
+                                    </div> <!-- row -->
+                                </div> <!-- container -->
+                            </div> <!-- carousel caption -->
+                        </div> <!-- carousel-item -->
+
+                        <div class="carousel-item bg_cover" style="background-image: url(assets/images/nsysu2.jpg)">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6 col-lg-7 col-sm-10">
+                                            <h2 class="carousel-title">題目：</h2>
+                                            <h4 class="carousel-title">撰寫課本的Voronoi diagram 演算法。</h4>
+                                        </div>
+                                    </div> <!-- row -->
+                                </div> <!-- container -->
+                            </div> <!-- carousel caption -->
+                        </div> <!-- carousel-item -->
+
+                        <div class="carousel-item bg_cover" style="background-image: url(assets/images/nsysu.jpg)">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6 col-lg-7 col-sm-10">
+                                            <h2 class="carousel-title">資安碩一</h2>
+                                            <h2 class="carousel-title">王品媛</h2>
+                                            <h2 class="carousel-title">M093140010</h2>
+                                        </div>
+                                    </div> <!-- row -->
+                                </div> <!-- container -->
+                            </div> <!-- carousel caption -->
+                        </div> <!-- carousel-item -->
+                    </div> <!-- carousel-inner -->
+
+                    <a class="carousel-control-prev" href="#carouselOne" role="button" data-slide="prev">
+                        <i class="lni-arrow-left-circle"></i>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carouselOne" role="button" data-slide="next">
+                        <i class="lni-arrow-right-circle"></i>
+                    </a>
+                </div> <!-- carousel -->
+            </div> <!-- bd-example -->
+        </div>
+
+    </section>
+
+    <!--====== NAVBAR PART ENDS ======-->
+
+    
+    
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="about-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="about-image text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="100">
+                        <img src="assets/images/window.JPG" alt="services">
+                    </div>
+                    <div class="section-title text-center mt-30 pb-40">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">軟體說明</h4>
+                        <p class="text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">壓縮檔裡有"main.exe"檔案，在window10的作業系統下直接雙擊執行就可以啟動(若視窗沒有馬上跳出需耐心等待)。</p>
+                        <p class="text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">以下分六個按鈕功能做介紹：</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-about d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                       
+                        <div class="about-content media-body">
+                            <h4 class="about-title">Run</h4>
+                            <p class="text">在畫布點選完或讀取完檔案後點擊，將完整執行Voronoi diagram。</p>
+                        </div>
+                    </div> <!-- single about -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-about d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.4s">
+                      
+                        <div class="about-content media-body">
+                            <h4 class="about-title">Step by Step</h4>
+                            <p class="text">在畫布點選完或讀取完檔案後持續點擊，將分步驟執行Voronoi diagram。</p>
+                        </div>
+                    </div> <!-- single about -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-about d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.6s">
+                       
+                        <div class="about-content media-body">
+                            <h4 class="about-title">Read File</h4>
+                            <p class="text">可選取輸入檔案，一次只能讀一筆。</p>
+                        </div>
+                    </div> <!-- single about -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-about d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.8s">
+                     
+                        <div class="about-content media-body">
+                            <h4 class="about-title">Read Output File</h4>
+                            <p class="text">目前無法使用。</p>
+                        </div>
+                    </div> <!-- single about -->
+                    
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-about d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.8s">
+                      
+                        <div class="about-content media-body">
+                            <h4 class="about-title">Output Result</h4>
+                            <p class="text">輸出執行完的結果。</p>
+                        </div>
+                    </div> <!-- single about -->
+                    
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-about d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.8s">
+                      
+                        <div class="about-content media-body">
+                            <h4 class="about-title">Clean All</h4>
+                            <p class="text">清空畫布。</p>
+                        </div>
+                    </div> <!-- single about -->
+                    
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+    <!--====== FORMAT PART START ======-->
+
+    <section id="format" class="format-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="format-image text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="100">
+                        <img src="assets/images/program.png" alt="program">
+                    </div>
+                    <div class="section-title text-center mt-30 pb-40">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">軟體規格書</h4>
+                        <p class="text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">執行軟體的方式和輸入輸出資料的規格。</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-format d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                        
+                        <div class="format-content media-body">
+                            <h4 class="format-title">輸入資料</h4>
+                            <p class="text">必須使用老師的範例檔案的格式，一次一筆資料。</p>
+                        </div>
+                        <div class="format-icon">
+                            <img src="assets/images/input-icon.png" alt="Icon">
+                        </div>
+                    </div> <!-- single format -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-format d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.4s">
+                        
+                        <div class="format-content media-body">
+                            <h4 class="format-title">輸出資料</h4>
+                            <p class="text">只輸出座標的陣列。</p>
+                        </div>
+                        <div class="format-icon">
+                            <img src="assets/images/output-icon.png" alt="Icon">
+                        </div>
+                    </div> <!-- single format -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-format d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.6s">
+                        <div class="format-content media-body">
+                            <h4 class="format-title">軟體介面</h4>
+                            <p class="text">畫布大小為600x600，可自由點擊.</p>
+                        </div>
+                    </div> <!-- single format-->
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-format d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.8s">
+                        <div class="format-content media-body">
+                            <h4 class="format-title">重複測試</h4>
+                            <p class="text">每次測試完需按"Clean All"按鈕清理陣列，或直接重啟程式。</p>
+                        </div>
+                    </div> <!-- single format -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FORMAT PART ENDS ======-->
+    <br>
+    <br>
+    <br>
+     <!--====== PROGRAMMING PART START ======-->
+
+     <section id="programming" class="programming-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="programming-image text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="100">
+                        <img src="assets/images/code.PNG" alt="services">
+                    </div>
+                    <div class="section-title text-center mt-30 pb-40">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">程式設計</h4>
+                        
+                        <p class="text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">一開始就把三個點做divide and conquer分為1點和2點，再做merge，超過3點以上就不斷遞迴直到小於三點，2點取中垂線，1點直接輸出。
+                        </p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== programming PART ENDS ======-->
+    <br>
+    <br>
+    <br>
+    <!--====== experiment PART START ======-->
+
+    <section id="experiment" class="experiment-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="experiment-image text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="100">
+                        <img src="assets/images/circle.png" alt="services">
+                    </div>
+                    <div class="section-title text-center mt-30 pb-40">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">軟體測試與實驗結果</h4>
+                        
+                        <p class="text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">不同輸入值的實驗結果。</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-experiment d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                        <div class="experiment-icon ">
+                            <img src="assets/images/2p.png" alt="Icon">
+                        </div>
+                        <div class="experiment-content media-body">
+                            <h4 class="experiment-title">2個點</h4>求出中垂線，沒有任何問題。</p>
+                        </div>
+                    </div> <!-- single experiment -->
+                    <div class="single-experiment d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                        <div class="experiment-icon ">
+                            <img src="assets/images/3p.png" alt="Icon">
+                        </div>
+                        <div class="experiment-content media-body">
+                            <h4 class="experiment-title">3個點</h4>
+                            <p class="text">求出Convex Hull，1點和2點merge起來。</p>
+                        </div>
+                    </div> <!-- single experiment -->
+                    <div class="single-experiment d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.8s">
+                        <div class="experiment-icon">
+                            <img src="assets/images/4p.png" alt="Icon">
+                        </div>
+                        <div class="experiment-content media-body">
+                            <h4 class="experiment-title">4個點</h4>
+                            <p class="text">切成2點和2點，因為沒有消線，畫面開始混亂。</p>
+                        </div>
+                    
+                    </div> <!-- single experiment -->
+                    <div class="single-experiment d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                        <div class="experiment-icon ">
+                            <img src="assets/images/5p.png" alt="Icon">
+                        </div>
+                        <div class="experiment-content media-body">
+                            <h4 class="experiment-title">5個點</h4>
+                            <p class="text">遞迴開始，未消線導致更加混亂。</p>
+                        </div>
+                    </div> <!-- single experiment -->
+                    <div class="single-experiment d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                        <div class="experiment-icon ">
+                            <img src="assets/images/6p.png" alt="Icon">
+                        </div>
+                        <div class="experiment-content media-body">
+                            <h4 class="experiment-title">6個點</h4>
+                            <p class="text">同5個點。</p>
+                        </div>
+                    </div> <!-- single experiment -->
+                    <div class="single-experiment d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                        <div class="experiment-icon ">
+                            <img src="assets/images/10p.png" alt="Icon">
+                        </div>
+                        <div class="experiment-content media-body">
+                            <h4 class="experiment-title">10個點</h4>
+                            <p class="text">線條打架。</p>
+                        </div>
+                    </div> <!-- single experiment -->
+                    <div class="single-experiment d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                        <div class="experiment-icon ">
+                            <img src="assets/images/12p.png" alt="Icon">
+                        </div>
+                        <div class="experiment-content media-body">
+                            <h4 class="experiment-title">12個點</h4>
+                            <p class="text">未消掉的線嚴重干擾merge了。</p>
+                        </div>
+                    </div> <!-- single experiment -->
+					<div class="single-experiment d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                        <div class="experiment-content media-body">
+                            <h4 class="experiment-title">系統資訊</h4>
+                            <p class="text">Operating System: Windows 10 專業版 64-bit</p>
+							<p class="text">Processor: Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz</p>
+							<p class="text">Memory: 16384MB RAM</p>
+							<p class="text">System Manufacturer: Gigabyte Technology Co., Ltd</p>
+							<p class="text">Display Devices: Intel(R) UHD Graphics 630</p>
+							<p class="text"></p>
+							<p class="text"></p>
+                        </div>
+                    </div> <!-- single experiment -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== experiment PART ENDS ======-->
+    <br>
+    <br>
+    <br>
+    <!--====== conclusion PART START ======-->
+
+    <section id="conclusion" class="conclusion-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="conclusion-image text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="100">
+                        <img src="assets/images/header-5.jpg" alt="services">
+                    </div>
+                    <div class="section-title text-center mt-30 pb-40">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">結論與心得</h4>
+                        
+                        <p class="text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">這次寫voronoi的過程真的非常艱辛，一度懷疑自己寫不出來，初測時連線都畫不好，後來經過學長和老師的鼓勵，不斷地請教同學、更改程式思路，從最底層就開始merge和遞迴，才終於實作出來，可惜消線的部分還是沒有想到好方法，導致多點之後畫面變得超級混亂，分割線一直撞到不應該存在的線，還有很多特殊條件沒有另外處理，所以遇到多點同線和正多邊形會爆錯，總體來說學到非常多，謝謝老師和各位同學、助教。</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            
+            
+        </div> <!-- container -->
+    </section>
+
+    <!--====== conclusion PART ENDS ======-->
+    <br>
+    <br>
+    <br>
+    <!--====== appendix PART START ======-->
+
+    <section id="appendix" class="appendix-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="appendix-image text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="100">
+                        <img src="assets/images/github.png" alt="services">
+                    </div>
+                    <div class="section-title text-center mt-30 pb-40">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">附錄</h4>
+                        
+                        <p class="text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">程式碼開源：</p>
+                        <p class="text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">https://github.com/snowflake1201/voronoi-diagram-hw</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            
+            
+        </div> <!-- container -->
+    </section>
+
+    <!--====== appendix PART ENDS ======-->
+    <br>
+    <br>
+    <br>
+    
+    
+    <!--====== FOOTER FOUR PART START ======-->
+
+    
+
+    <!--====== FOOTER FOUR PART ENDS ======-->
+    
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->  
+
+    <!--====== PART START ======-->
+
+
+
+    <!--====== PART ENDS ======-->
+
+
+
+
+
+
+
+
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!--====== Isotope js ======-->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <!--====== Images Loaded js ======-->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Scrolling js ======-->
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
